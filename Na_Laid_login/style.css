@@ -1,0 +1,185 @@
+header {
+  background-color: #fff;
+}
+#logo {
+  background: url("images/Logo.png") 0 0;
+  width: 84px;
+  height: 51px;
+  margin: 10px 10px;
+}
+#logo:hover {
+  background: url("images/Logo.png") -94px 0;
+}
+nav {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: larger;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+#NavError {
+  display: none;
+  color: #ff5757;
+  right: 0;
+  animation-name: fadeOut;
+  animation-duration: 15s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  background: url("images/bg.png") no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  zoom: normal;
+}
+h2 {
+  background-color: #fdb7b7;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 50px;
+  left: 1078px;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+.login-form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 50px;
+  left: 1078px;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+}
+.login-form input[type="text"]:hover,
+.login-form input[type="password"]:hover {
+  background-color: aliceblue;
+}
+.login-form input[type="submit"] {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  padding: 10px;
+  width: 100%;
+}
+.login-form input[type="submit"]:hover {
+    background-color: #fdb7b7;
+    color: black;
+  }
+.login-form a {
+  color: #333;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: left;
+}
+#requiredPas, #requiredU {
+    color: red;
+}
+aside{
+    margin: auto;
+    position: relative;
+    left: -23em;
+    bottom: 350px;
+    width: 650px;
+}
+aside h1 {
+    font-size: 50px;
+}
+aside p {
+    margin-left: 50px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#facebook {
+  float: right;
+  background: url("images/SocMed.png") no-repeat 0 0;
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+#facebook:hover {
+  background: url("images/SocMed.png") no-repeat 0 -110px;
+  width: 100px;
+  height: 100px;
+}
+#insta {
+  float: right;
+  background: url("images/SocMed.png") no-repeat -315px 0;
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+#insta:hover {
+  background: url("images/SocMed.png") no-repeat -315px -110px;
+  width: 100px;
+  height: 100px;
+}
+#twit {
+  float: right;
+  background: url("images/SocMed.png") no-repeat -105px 0;
+  width: 100px;
+  height: 100px;
+  margin-right: 30px;
+}
+#twit:hover {
+  background: url("images/SocMed.png") no-repeat -105px -110px;
+  width: 100px;
+  height: 100px;
+}
+#socmed {
+  float: right;
+  width: 100%;
+}
+footer p {
+  display: block;
+  width: 150%;
+}

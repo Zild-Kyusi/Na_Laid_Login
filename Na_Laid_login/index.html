@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" onclick="showErrorMessage()"
+        ><img id="logo" src="images/Trans.png"
+      /></a>
+    </header>
+
+    <nav>
+      <a href="#" onclick="showErrorMessage()">Home</a>
+      <a href="#" onclick="showErrorMessage()">Help</a>
+      <a href="#" onclick="showErrorMessage()">Contact Us</a>
+      <a href="#" onclick="showErrorMessage()">Articles</a>
+      <div id="NavError"></div>
+    </nav>
+
+    <main>
+      <h2>Login to Browse</h2>
+      <div class="login-form">
+        <form onsubmit="validateForm(event)">
+          <div class="error-message" id="password-error"></div>
+          <div class="error-message" id="username-error"></div>
+
+          <label for="username">Username<span id="requiredU"></span></label>
+          <input type="text" id="username" name="username" />
+
+          <label for="password">Password<span id="requiredPas"></span></label>
+          <input type="password" id="password" name="password" />
+
+          <input type="submit" value="Login" onclick="validateForm()" />
+          <a href="#">Forgot password?</a>
+        </form>
+      </div>
+    </main>
+
+    <aside>
+      <h1>Masced Mind</h1>
+      <p>
+        This is a project dedicated to raising awareness and promoting support
+        for men's mental health. Our goal is to create a safe and supportive
+        environment where men can openly discuss their mental health struggles
+        without fear of stigma or judgement.
+      </p>
+      <p>
+        By joining us, you can be a part of a community that supports and
+        uplifts men's mental health, and help us in our mission to create a
+        world where everyone can live their best life, mentally and emotionally.
+      </p>
+    </aside>
+
+    <footer>
+      <div>
+        <p>Contact #: +00 000 000</p>
+        <p>Company Email: zildjian.laid@smc.pshs.edu.ph</p>
+        <p>
+          Address: 3GM5+472, Bukidnon Road, Tugbok, Davao City, Davao del Sur
+        </p>
+      </div>
+      <div id="socmed">
+        <a href="https://www.facebook.com/zildjian.laid.7"
+          ><img id="facebook" src="images/Trans.png"
+        /></a>
+        <a href="https://www.instagram.com/dorteryin/"
+          ><img id="insta" src="images/Trans.png"
+        /></a>
+        <a href="https://twitter.com/TwentySixPoetry"
+          ><img id="twit" src="images/Trans.png"
+        /></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
